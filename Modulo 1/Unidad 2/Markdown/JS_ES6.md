@@ -1,4 +1,4 @@
-# Unidad 2 - Modulo 1
+ # Unidad 2 - Modulo 1
 En esta unidad podrán conocer:
 
 - Sintaxis
@@ -125,7 +125,7 @@ const person = {
   }
 };
 
-const { street, city, state } = person.address;
+const { street, city, state } = person.address; //ESTO ES EL DESCONTRUCTOR, ENTRE {PROPIEDADES DEL OBJETO LITERAL}
 console.log(street, city, state); // Salida: 123 Main St Anytown CA
 ```
 El deconstructor es una forma eficiente de asignar valores de propiedades de objetos o elementos de arrays a variables individuales para un manejo más sencillo.
@@ -134,8 +134,13 @@ El deconstructor es una forma eficiente de asignar valores de propiedades de obj
 Con ES6, podemos asignar valores por defecto a los parámetros de las funciones. Anteriormente, debíamos verificar si la variable tenía un valor asignado. Ahora, en ES6, podemos asignar valores por defecto directamente al definir la función.
 
 Ejemplo:
-
+```JS
+const sumar =(a, b=100)=>{
+  return a + b;
+}
+sumar(10) //a=10 por parametro y b=100 por defecto
 ```
+
 
 ### Javascript – Import && Export
 Con la introducción de import y export en JavaScript (ES6), se permite la importación y exportación de módulos entre archivos JavaScript. Esto permite modularizar el código y acceder a funciones o clases definidas en otros archivos sin la necesidad de importarlos directamente en el HTML cuando se utiliza JavaScript en el navegador.
