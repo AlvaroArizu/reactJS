@@ -1,7 +1,5 @@
 import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
 function Login() {
-  // const navigate = useNavigate();
   const [form, setForm] = useState({ correo: "", clave: "" });
   const [error, setError] = useState({ correo: "", clave: "" });
   const handleChange = (event) => {
@@ -18,11 +16,6 @@ function Login() {
     event.preventDefault();
     console.log(form);
   };
-  // const handleClick = () => {
-  //   //Logica para validar usuario
-  //   //redireccionamos home
-  //   navigate("/");
-  // };
   return (
     <form onSubmit={handleSubmit}>
       <div>

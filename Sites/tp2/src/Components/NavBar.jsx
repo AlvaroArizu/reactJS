@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 function NavBar() {
   return (
     <div>
@@ -11,9 +12,6 @@ function NavBar() {
         </li>
         <li>
           <Link to={"/alta"}>Registrarse</Link>
-        </li>
-        <li>
-          <Link to={"/contador"}>Contador</Link>
         </li>
       </ul>
     </div>

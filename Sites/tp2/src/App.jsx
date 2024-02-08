@@ -7,10 +7,8 @@ function App() {
       <Router>
         <NavBar />
         <Public />
-        <div>Footer</div>
       </Router>
     </>
   );
 }
-
 export default App;

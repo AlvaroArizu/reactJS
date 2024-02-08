@@ -1,6 +1,5 @@
 import Home from "../Pages/Home.jsx";
 import Detalle from "../Pages/Detalle.jsx";
-import Contador from "../Pages/Contador.jsx";
 import Login from "../Pages/Login.jsx";
 import Registro from "../Pages/Registro.jsx";
 import { Route, Routes } from "react-router-dom";
@@ -10,7 +9,6 @@ function Public() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/contador" element={<Contador />} />
         <Route path="/ingresar" element={<Login />} />
         <Route path="/alta" element={<Registro />} />
         <Route path="/producto/:id" element={<Detalle />} />
